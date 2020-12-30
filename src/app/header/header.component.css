@@ -1,0 +1,148 @@
+.top-header {
+    height: 50px;
+    background-color: rgb(246, 246, 246)
+}
+
+.top-header-contact {
+    display: inline;
+    margin-right: 33px;
+}
+
+.top-header-contact svg {
+    font-size: 16px;
+    color: rgb(30, 42, 120);
+    line-height: 1.125;
+    margin-right: 10px;
+}
+
+.top-header-contact a {
+    font-size: 13px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(100, 117, 137);
+    font-weight: 500;
+    line-height: 1.385;
+}
+
+.top-header-social svg {
+    margin-right: 19px;
+    font-size: 16px;
+    color: rgb(30, 42, 120);
+    line-height: 1.125;
+}
+
+/* ------------- # Menu Section ------------- */
+
+.menu-header {
+    height: 116px;
+}
+
+.menu-header img.logo {
+    width: 150px;
+}
+
+/* Menu Area */
+.menu-area ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-area ul li {
+    display: inline;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.286;
+    margin-right: 41px;
+}
+
+.menu-area ul li.current-menu-item > a, .menu-area ul li a:hover {
+    color: rgb(34, 54, 69);
+}
+
+.menu-area ul li a {
+    color: #647589;
+}
+
+.menu-area ul li:last-child {
+    margin: 0;
+}
+
+.menu-area > ul > li {
+    position: relative;
+}
+/* Menu Ends */
+
+/* Submenu area */
+.menu-area > ul > li > ul {
+    position: absolute;
+    top: 280%;
+    left: -10px;
+    min-width: 176px;
+    z-index: 999;
+    background: white;
+    box-shadow: 0px 0px 20px 3px rgba(150, 176, 203, 0.15);
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+.menu-area > ul > li > ul:before {
+    content: ' ';
+    background: transparent;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    z-index: 3;
+    bottom: 100%;
+    left: 10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+}
+
+.menu-area > ul > li > ul > li {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.menu-area > ul > li > ul > li:last-child {
+    border-bottom: none;
+}
+
+.menu-area > ul > li > ul li {
+    line-height: 2;
+    margin: 0;
+    position: relative;
+    display: block;
+    font-size: 13px;
+    padding: 10px 15px;
+}
+
+.menu-area > ul > li:hover > ul {
+    opacity: 1;
+    transition: 0.3s;
+    visibility: visible;
+    top: 185%;
+}
+/* Submenu area ends */
+
+/* Second submenu area */
+.menu-area > ul > li > ul > li ul {
+    position: absolute;
+    top: 0;
+    left: 170%;
+    width: 120px;
+    padding: 5px 10px;
+    z-index: 999;
+    background: white;
+    box-shadow: 0px 0px 20px 3px rgba(150, 176, 203, 0.15);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.menu-area > ul > li ul > li:hover > ul {
+    opacity: 1;
+    transition: 0.3s;
+    left: 100%;
+}
